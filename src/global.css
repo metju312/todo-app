@@ -1,0 +1,52 @@
+:root {
+  --primary_600: rgb(109, 186, 86);
+  --gray_700: #344054;
+  --white: rgb(255, 255, 255);
+  --gray_500: #667085;
+  --primary_700: rgb(90, 165, 76);
+  --black: rgb(0, 0, 0);
+  --gray_900: rgb(16, 24, 40);
+  --primary_100: rgb(216, 240, 207);
+}
+
+body {
+  margin: 0;
+}
+
+.text_sm_medium {
+  font-size: 14px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.text_md_normal {
+  font-size: 16px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  line-height: 24px;
+}
+
+.text_sm_normal {
+  font-size: 14px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  line-height: 20px;
+}
+
+.text_md_medium {
+  font-size: 16px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.display_sm_semibold {
+  font-size: 30px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 38px;
+}

@@ -1,0 +1,23 @@
+.mail_wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  padding: 4px 2px;
+}
+.icon {
+  display: flex;
+  border: 2px solid rgb(16, 24, 40);
+  width: 20px;
+  height: 16px;
+}
+.styled281 {
+  fill: transparent;
+  width: 20px;
+  height: 16px;
+}
+.styled279 {
+}
+.styled280 {
+}

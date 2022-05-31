@@ -1,0 +1,67 @@
+.social_icon_wrapper {
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vector {
+  display: flex;
+  position: absolute;
+  top: 9.84px;
+  left: 12.24px;
+  width: 11.526px;
+  height: 11.266px;
+}
+.styled713 {
+  fill: rgba(66, 133, 244, 1);
+  width: 11.526px;
+  height: 11.266px;
+}
+.styled712 {
+}
+.vector1 {
+  display: flex;
+  position: absolute;
+  top: 14.3px;
+  left: 1.52px;
+  width: 18.678px;
+  height: 9.701px;
+}
+.styled715 {
+  fill: rgba(52, 168, 83, 1);
+  width: 18.678px;
+  height: 9.701px;
+}
+.styled714 {
+}
+.vector2 {
+  display: flex;
+  position: absolute;
+  top: 6.61px;
+  left: 0.24px;
+  width: 5.263px;
+  height: 10.776px;
+}
+.styled717 {
+  fill: rgba(251, 188, 4, 1);
+  width: 5.263px;
+  height: 10.776px;
+}
+.styled716 {
+}
+.vector3 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 1.52px;
+  width: 18.753px;
+  height: 9.706px;
+}
+.styled719 {
+  fill: rgba(234, 67, 53, 1);
+  width: 18.753px;
+  height: 9.706px;
+}
+.styled718 {
+}

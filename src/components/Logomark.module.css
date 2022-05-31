@@ -1,0 +1,238 @@
+.logomark_wrapper {
+  display: flex;
+  width: fit-content;
+  align-items: flex-start;
+}
+.content {
+  display: block;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(208, 213, 221, 1) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  overflow: hidden;
+  position: relative;
+}
+.grid {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+}
+.circle {
+  display: flex;
+  position: absolute;
+  top: 1.96px;
+  left: 1.96px;
+  width: 28.078px;
+  height: 28.078px;
+}
+.styled1 {
+  fill: rgba(208, 213, 221, 1);
+  width: 28.078px;
+  height: 28.078px;
+}
+.styled {
+}
+.circle1 {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 8px;
+  height: 8px;
+}
+.styled3 {
+  fill: rgba(208, 213, 221, 1);
+  width: 8px;
+  height: 8px;
+}
+.styled2 {
+}
+.circle2 {
+  display: flex;
+  position: absolute;
+  top: 13.24px;
+  left: 13.24px;
+  width: 5.515px;
+  height: 5.515px;
+}
+.styled5 {
+  fill: rgba(208, 213, 221, 1);
+  width: 5.515px;
+  height: 5.515px;
+}
+.styled4 {
+}
+.line {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 15.96px;
+  width: 0.078px;
+  height: 32px;
+}
+.styled7 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled6 {
+}
+.line1 {
+  display: flex;
+  position: absolute;
+  top: 15.96px;
+  left: 32px;
+  transform: rotate(90deg);
+  width: 0.078px;
+  height: 32px;
+}
+.styled9 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled8 {
+}
+.line2 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 26.6px;
+  width: 0.078px;
+  height: 32px;
+}
+.styled11 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled10 {
+}
+.line3 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 10.64px;
+  width: 0.078px;
+  height: 32px;
+}
+.styled13 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled12 {
+}
+.line4 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 21.28px;
+  width: 0.078px;
+  height: 32px;
+}
+.styled15 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled14 {
+}
+.line5 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 5.32px;
+  width: 0.078px;
+  height: 32px;
+}
+.styled17 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled16 {
+}
+.line6 {
+  display: flex;
+  position: absolute;
+  top: 26.6px;
+  left: 32px;
+  transform: rotate(90deg);
+  width: 0.078px;
+  height: 32px;
+}
+.styled19 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled18 {
+}
+.line7 {
+  display: flex;
+  position: absolute;
+  top: 10.64px;
+  left: 32px;
+  transform: rotate(90deg);
+  width: 0.078px;
+  height: 32px;
+}
+.styled21 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled20 {
+}
+.line8 {
+  display: flex;
+  position: absolute;
+  top: 21.28px;
+  left: 32px;
+  transform: rotate(90deg);
+  width: 0.078px;
+  height: 32px;
+}
+.styled23 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled22 {
+}
+.line9 {
+  display: flex;
+  position: absolute;
+  top: 5.32px;
+  left: 32px;
+  transform: rotate(90deg);
+  width: 0.078px;
+  height: 32px;
+}
+.styled25 {
+  fill: rgba(208, 213, 221, 1);
+  width: 0.078px;
+  height: 32px;
+}
+.styled24 {
+}
+.dot {
+  display: flex;
+  position: absolute;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.blur {
+  display: block;
+  position: absolute;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}

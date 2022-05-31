@@ -1,0 +1,6 @@
+._navigation_actions_wrapper {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 12px;
+}

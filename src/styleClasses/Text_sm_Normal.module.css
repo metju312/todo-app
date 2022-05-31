@@ -1,0 +1,8 @@
+@import "src/global";
+
+.Text_sm_Normal {
+  font-size: 14px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  line-height: 20px;
+}

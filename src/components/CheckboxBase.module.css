@@ -1,0 +1,10 @@
+._checkbox_base_wrapper {
+  display: block;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgb(208, 213, 221);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}

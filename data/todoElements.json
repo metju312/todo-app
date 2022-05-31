@@ -1,0 +1,14 @@
+{
+  "todoElements":[
+    {
+      "id":"1",
+      "title":"Zaimplementować aplikację",
+      "description":"Opis"
+    },
+    {
+      "id":"2",
+      "title":"Pójść do sklepu",
+      "description":"Opis"
+    }
+  ]
+}

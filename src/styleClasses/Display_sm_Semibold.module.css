@@ -1,0 +1,9 @@
+@import "src/global";
+
+.Display_sm_Semibold {
+  font-size: 30px;
+  letter-spacing: 0em;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 38px;
+}

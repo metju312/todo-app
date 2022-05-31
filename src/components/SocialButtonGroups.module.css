@@ -1,0 +1,7 @@
+.social_button_groups_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

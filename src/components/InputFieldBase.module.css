@@ -1,0 +1,46 @@
+._input_field_base_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.input_with_label {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.label {
+  text-align: left;
+  white-space: nowrap;
+  color: var(--gray_700);
+}
+.input {
+  display: flex;
+  background: rgba(255, 255, 255, 1);
+  filter: drop-shadow(inset 0px 1px 2px rgba(16, 24, 40, 0.05));
+  border: 1px solid rgb(208, 213, 221);
+  border-radius: 8px;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: center;
+  padding: 10px 14px 10px 14px;
+  gap: 8px;
+}
+.content1 {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 8px;
+}
+.text {
+  text-align: left;
+  flex-grow: 1;
+  color: var(--gray_500);
+}
+.hint_text {
+  text-align: left;
+  align-self: stretch;
+  color: var(--gray_500);
+}

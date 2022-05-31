@@ -1,0 +1,36 @@
+.social_icon_wrapper1 {
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vector4 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 23.854px;
+}
+.styled800 {
+  fill: rgba(24, 119, 242, 1);
+  width: 24px;
+  height: 23.854px;
+}
+.styled799 {
+}
+.vector5 {
+  display: flex;
+  position: absolute;
+  top: 4.69px;
+  left: 7.08px;
+  width: 10.266px;
+  height: 19.313px;
+}
+.styled802 {
+  width: 10.266px;
+  height: 19.313px;
+}
+.styled801 {
+}
