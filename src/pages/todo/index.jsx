@@ -1,30 +1,49 @@
-import path from 'path';
-import fs from 'fs/promises';
-
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import TodoList from "../../modules/todo/components/TodoList";
+import useSWR from 'swr';
+import {getAllTodoElements} from "../../modules/todo/api/todo-api";
 
 
 function TodoPage(props) {
-  return (
-    <Container>
+  const [todoElements, setTodoElements] = useState(props.todoElements);
+
+  const {data, error} = useSWR('https://todo-app-2ca83-default-rtdb.europe-west1.firebasedatabase.app/todo-elements.json', (url) => fetch(url).then(res => res.json()));
+
+  useEffect(() => {
+    if(data) {
+      const parsedTodoElements = [];
+      for(const key in data) {
+        parsedTodoElements.push({id: key, title: data[key].title, description: data[key].description})
+      }
+      setTodoElements(parsedTodoElements);
+    }
+  }, [data]);
+
+  if(error) {
+    return (<div>Failed to load</div>)
+  }
+
+  if(!data || !todoElements) {
+    return (<div>Loading...</div>)
+  }
+
+
+  return (<Container>
       <Content>
-        <TodoList todoElements={props.todoElements}/>
+        <TodoList todoElements={todoElements}/>
       </Content>
-    </Container>
-  );
+    </Container>);
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data', 'todoElements.json');
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
+  const todoElements = await getAllTodoElements();
 
   return {
     props: {
-      todoElements: data.todoElements
-    }
+      todoElements: todoElements
+    },
+    revalidate: 10
   }
 }
 

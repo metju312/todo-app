@@ -1,48 +1,43 @@
 import React from 'react';
 import {useRouter} from "next/router";
-import path from "path";
-import fs from "fs/promises";
+import {getAllTodoElements, getTodoElementById} from "../../modules/todo/api/todo-api";
+import todo from "./index";
 
-function TodoElementPage({loadedTodoElement}) {
+function TodoElementPage({selectedTodoElement}) {
   const router = useRouter();
 
   console.log('router.query', router.query);
 
-  if (!loadedTodoElement) {
+  if (!selectedTodoElement) {
     return (<p>Loading...</p>)
   }
 
   return (
-    <div>TodoElementPage: {loadedTodoElement.id}</div>
+    <>
+      <div>TodoElementPage: {selectedTodoElement.id}</div>
+      <div>{selectedTodoElement.description}</div>
+    </>
   );
 }
 
 export async function getStaticProps(context) {
-  const {params} = context;
-  const todoElementId = params.todoId;
-
-  const filePath = path.join(process.cwd(), 'data', 'todoElements.json');
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
-
-  const todoElement = data.todoElements.find(element => element.id === todoElementId);
-
-  if (!todoElement) {
-    return {notFound: true}
-  }
+  const todoElementId = context.params.todoId;
+  const selectedTodoElement = await getTodoElementById(todoElementId);
 
   return {
     props: {
-      loadedTodoElement: todoElement
+      selectedTodoElement: selectedTodoElement
     }
   }
 }
 
 export async function getStaticPaths() {
+  const todoElements = await getAllTodoElements();
+
+  const params = todoElements.map(todoElement => ({params: {todoId: todoElement.id}}))
+
   return {
-    paths: [
-      {params: {todoId: '1'}}
-    ],
+    paths: params,
     fallback: true
   }
 }
