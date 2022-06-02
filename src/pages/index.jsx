@@ -1,8 +1,12 @@
 import React from "react";
+import Head from 'next/head';
 
 export default function Index() {
   return (
     <div>
+      <Head>
+        <title>Myyyy</title>
+      </Head>
       <h1>Generated pages: </h1>
       <br />
       <a href="loginpage">LoginPage</a>

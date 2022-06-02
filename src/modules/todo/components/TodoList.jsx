@@ -7,11 +7,19 @@ function TodoList(props) {
   const [todoElements, setTodoElements] = useState(props.todoElements);
 
   const addEditableElement = () => {
-    setTodoElements(todoElements.concat([{
-      id: '3',
+    const reqBody = {
       title: 'TODO',
       description: 'Opis',
-    }]));
+    };
+
+    fetch('/api/feedback', {
+      method: 'POST',
+      body: JSON.stringify(reqBody),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => response.json())
+      .then((data) => console.log(data));
   }
 
   useEffect(() => {

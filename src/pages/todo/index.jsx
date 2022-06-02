@@ -43,7 +43,7 @@ export async function getStaticProps() {
     props: {
       todoElements: todoElements
     },
-    revalidate: 10
+    revalidate: 1800
   }
 }
 
