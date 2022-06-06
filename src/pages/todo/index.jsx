@@ -5,18 +5,15 @@ import useSWR from 'swr';
 import {getAllTodoElements} from "../../modules/todo/api/todo-api";
 
 
-function TodoPage(props) {
-  const [todoElements, setTodoElements] = useState(props.todoElements);
+function TodoPage() {
+  const [todoElements, setTodoElements] = useState([]);
 
-  const {data, error} = useSWR('https://todo-app-2ca83-default-rtdb.europe-west1.firebasedatabase.app/todo-elements.json', (url) => fetch(url).then(res => res.json()));
+  const {data, error} = useSWR('/api/todo-elements', (url) => fetch(url).then(res => res.json()));
 
   useEffect(() => {
     if(data) {
-      const parsedTodoElements = [];
-      for(const key in data) {
-        parsedTodoElements.push({id: key, title: data[key].title, description: data[key].description})
-      }
-      setTodoElements(parsedTodoElements);
+      console.log('data', data);
+      setTodoElements(data);
     }
   }, [data]);
 

@@ -4,7 +4,8 @@ import TodoElement from "./TodoElement";
 import PlusIcon from "../../common/icons/PlusIcon";
 
 function TodoList(props) {
-  const [todoElements, setTodoElements] = useState(props.todoElements);
+  console.log('props1', props);
+  const [todoElements, setTodoElements] = useState([]);
 
   const addEditableElement = () => {
     const reqBody = {
@@ -12,7 +13,7 @@ function TodoList(props) {
       description: 'Opis',
     };
 
-    fetch('/api/feedback', {
+    fetch('/api/todo-elements', {
       method: 'POST',
       body: JSON.stringify(reqBody),
       headers: {
@@ -23,9 +24,10 @@ function TodoList(props) {
   }
 
   useEffect(() => {
-    console.log('props', props);
+    console.log('props2', props);
     console.log(todoElements);
-  }, [todoElements])
+    setTodoElements(props.todoElements);
+  }, [props])
 
   return (
     <TodoListContent>
